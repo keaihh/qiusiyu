@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.fc</groupId>
-    <artifactId>02-Mybatis-03-Character</artifactId>
+    <artifactId>02-MyBatis-04-Placeholder</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -24,13 +24,12 @@
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>5.1.49</version>
-            <scope>runtime</scope>
         </dependency>
 
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.10</version>
+            <version>4.13.2</version>
         </dependency>
 
         <dependency>
@@ -39,4 +38,5 @@
             <version>1.18.20</version>
         </dependency>
     </dependencies>
+
 </project>
