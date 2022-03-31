@@ -16,5 +16,8 @@
     <!--可以开启一些额外的附加功能，日期格式转换器，Json解析-->
     <mvc:annotation-driven/>
 
+    <!--放行静态资源-->
+    <mvc:default-servlet-handler/>
+
     <import resource="classpath:applicationContext.xml"/>
 </beans>
