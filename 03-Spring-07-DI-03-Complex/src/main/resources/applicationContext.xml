@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id="dog" class="com.fc.entity.Dog">
+    <property name="color" value="白色"/>
+    <property name="breed" value="哈士奇"/>
+</bean>
+    <bean id="complexType" class="com.fc.entity.ComplexType">
+    <property name="objects" >
+        <array>
+            <value>1</value>
+            <value>小可爱</value>
+            <value>true</value>
+            <value>3.14</value>
+        </array>
+    </property>
+
+    <property name="list">
+        <list>
+            <value>营养快线</value>
+            <value>萍</value>
+            <value>莎</value>
+            <value>楠</value>
+        </list>
+    </property>
+
+    <property name="set">
+        <set>
+            <value>123</value>
+            <value>456</value>
+            <value>789</value>
+        </set>
+    </property>
+
+    <property name="map">
+        <map>
+            <entry key="易烊千玺" value="四个字"/>
+            <entry key="迪丽热巴" value-ref="dog"/>
+        </map>
+    </property>
+</bean>
+</beans>
