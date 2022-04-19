@@ -24,9 +24,7 @@ public class AnnotationController {
     @ResponseBody
     public String getUser(@PathVariable("id") String id){
         System.out.println("查询id为"+id+"学生");
-
         return "查询id为"+id+"学生";
-
     }
     //    @RequestMapping(value = "user/{id}",produces = "test/html;charset=UTF-8",method = RequestMethod.DELETE)
     @DeleteMapping(value = "user/{id}",produces = "test/html;charset=UTF-8")
