@@ -4,13 +4,17 @@ server:
   port: 8848
   servlet:
     context-path: /yml
+person:
+  username: "易烊千玺"
+  password: "123456"
+
 
 student:
-  name: "易烊\r\n千玺"
+  name: "易烊\r\n千玺"    #单引号会原样输出，双引号识别转义字符
   age: 22
   gender: '男'
   married: false                #布尔
-  birthdy: 2000/11/28 10:00:01  #日期
+  birthday: 2000/11/28 10:00:01  #日期
   hobby: ["唱","篮球","rap"]     #数组
   food:                         #集合
     - 蛋花汤
@@ -20,5 +24,5 @@ student:
     - 一份凄凉
   scor: {"java": 100,"mysql": 100}  #Map
   car:                              #对象
-    name: BY·糖
+    brand: BY·糖
     color: 白色
